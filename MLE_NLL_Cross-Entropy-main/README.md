@@ -53,4 +53,3 @@ I found some academic papers that could help deepen your understanding of the re
 - **Cited by**: 18
 - [PDF](https://ieeexplore.ieee.org/ielx7/10206/9151439/09464254.pdf)
 
-Would you like to go into more detail on any of these papers? Also, would you like to save any of these citations to your Zotero reference manager?
