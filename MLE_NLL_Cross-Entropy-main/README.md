@@ -1,6 +1,7 @@
 This notebook aims to give an understanding of the concepts of Maximum Likelihood Estimation (MLE), Negative Log-Likelihood (NLL), Cross Entropy, and Kullback-Leibler (K-L) divergence.
 
 ## Theoretical Foundations
+
 - **Maximum Likelihood Estimation (MLE)**: Explain the principle of MLE and how it aims to find the parameter values that maximize the likelihood of making the observed data.
 - **Negative Log-Likelihood (NLL)**: Discuss why NLL is used as a loss function, emphasizing its relationship with MLE. Mention that NLL is essentially the negative logarithm of the likelihood function.
 - **Cross Entropy**: Introduce the concept of entropy and then cross-entropy. Explain how cross-entropy measures the dissimilarity between the true distribution \( p \) and the predicted distribution \( q \).
