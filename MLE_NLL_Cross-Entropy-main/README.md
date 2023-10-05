@@ -128,31 +128,31 @@ Negative Log-Likelihood is a loss function commonly used in statistical modeling
 
 #### Mathematical Formulation
 
-The NLL is derived from the likelihood function \( L(\theta; \mathbf{X}) \), and is given by:
+The NLL is derived from the likelihood function $( L(\theta; \mathbf{X}) $), and is given by:
 
-\[
+$[
 \text{NLL}(\theta; \mathbf{X}) = - \log L(\theta; \mathbf{X})
-\]
+$]
 
-For a set of \( N \) observations, the NLL can be represented as:
+For a set of $( N $) observations, the NLL can be represented as:
 
-\[
+$[
 \text{NLL}(\theta; \mathbf{X}) = -\sum_{i=1}^{N} \log f(x_i; \theta)
-\]
+$]
 
 #### Objectives of minimising NLL
 
-The aim is to find the model parameters \( \theta \) that minimize the NLL. In essence, minimizing NLL is equivalent to maximizing the likelihood of the model, making the observed data most probable.
+The aim is to find the model parameters $( \theta $) that minimize the NLL. In essence, minimizing NLL is equivalent to maximizing the likelihood of the model, making the observed data most probable.
 
 #### Application in Classification Problems
 
 In classification tasks, NLL is often used with softmax activation in the output layer. The NLL for a multi-class classification problem can be given as:
 
-\[
+$[
 \text{NLL} = -\sum_{i=1}^{N} \sum_{j=1}^{K} y_{ij} \log(p_{ij})
-\]
+$]
 
-Here, \( N \) is the number of samples, \( K \) is the number of classes, \( y_{ij} \) is the true label, and \( p_{ij} \) is the predicted probability.
+Here, $( N $) is the number of samples, $( K $) is the number of classes, $( y_{ij} $) is the true label, and $( p_{ij} $) is the predicted probability.
 
 #### Advantages and Limitations
 Advantages: Provides a probabilistic interpretation, well-suited for classification problems.
@@ -242,27 +242,27 @@ print("Training complete.")
 
 
 ### Cross-Entropy
-Cross-Entropy is a loss function commonly used in machine learning and optimization, particularly for classification tasks. It measures the dissimilarity between the true distribution \( P \) and the predicted distribution \( Q \) over the same events. Lower values of Cross-Entropy indicate better performance.
+Cross-Entropy is a loss function commonly used in machine learning and optimization, particularly for classification tasks. It measures the dissimilarity between the true distribution $( P $) and the predicted distribution $( Q $) over the same events. Lower values of Cross-Entropy indicate better performance.
 
 #### Mathematical Formulation
 
-For two discrete probability distributions \( P \) and \( Q \), the Cross-Entropy \( H(P, Q) \) is defined as:
+For two discrete probability distributions $( P $) and $( Q $), the Cross-Entropy $( H(P, Q) $) is defined as:
 
-\[
+$[
 H(P, Q) = -\sum_{x} P(x) \log(Q(x))
-\]
+$]
 
-For a classification problem with \( N \) samples and \( C \) classes, the Cross-Entropy loss \( L \) is given by:
+For a classification problem with $( N $) samples and $( C $) classes, the Cross-Entropy loss $( L $) is given by:
 
-\[
+$[
 L = -\frac{1}{N} \sum_{i=1}^{N} \sum_{c=1}^{C} y_{ic} \log(p_{ic})
-\]
+$]
 
-Here, \( y_{ic} \) is the true label and \( p_{ic} \) is the predicted probability for class \( c \) of sample \( i \).
+Here, $( y_{ic} $) is the true label and $( p_{ic} $) is the predicted probability for class $( c $) of sample $( i $).
 
 #### Objective of Minimizing Cross-Entropy
 
-The goal is to find the model parameters that minimize the Cross-Entropy loss. This effectively makes the predicted distribution \( Q \) as close as possible to the true distribution \( P \).
+The goal is to find the model parameters that minimize the Cross-Entropy loss. This effectively makes the predicted distribution $( Q $) as close as possible to the true distribution $( P $).
 
 
 #### Advantages and Limitations
@@ -294,28 +294,28 @@ Cross-Entropy: 0.1738073366910675
 
 ### Kullback-Leibler (K-L) Divergence
 
-Kullback-Leibler (K-L) Divergence is a measure used in information theory to quantify the difference between two probability distributions \( P \) and \( Q \). Unlike Cross-Entropy, it specifically measures how one distribution diverges from a reference distribution.
+Kullback-Leibler (K-L) Divergence is a measure used in information theory to quantify the difference between two probability distributions $( P $) and $( Q $). Unlike Cross-Entropy, it specifically measures how one distribution diverges from a reference distribution.
 
 #### Mathematical Formulation
 
-For two discrete probability distributions \( P \) and \( Q \), the K-L Divergence \( D_{KL}(P \parallel Q) \) is defined as:
+For two discrete probability distributions $( P $) and $( Q $), the K-L Divergence $( D_{KL}(P \parallel Q) $) is defined as:
 
-\[
+$[
 D_{KL}(P \parallel Q) = \sum_{x} P(x) \log \left( \frac{P(x)}{Q(x)} \right)
-\]
+$]
 
 #### Objective of Minimizing K-L Divergence
 
-The goal of minimizing K-L Divergence is to make the approximating distribution \( Q \) as close as possible to the target distribution \( P \).
+The goal of minimizing K-L Divergence is to make the approximating distribution $( Q $) as close as possible to the target distribution $( P $).
 
 #### Application in Machine Learning
 
-K-L Divergence is often used in unsupervised learning, particularly in methods like t-SNE for dimensionality reduction, and in variational inference.
+K-L Divergence is often used in unsupervised learning, particularly in methods like t-SNE for dimensionality reduction and in variational inference.
 
 #### Advantages and Limitations
 
 - **Advantages**: Provides a way to measure the divergence of one distribution from another, useful in various machine learning applications.
-- **Limitations**: Like other loss functions and measures, K-L Divergence can be sensitive to outliers. It is also not symmetric, meaning \( D_{KL}(P \parallel Q) \neq D_{KL}(Q \parallel P) \).
+- **Limitations**: Like other loss functions and measures, K-L Divergence can be sensitive to outliers. It is also not symmetric, meaning $( D_{KL}(P \parallel Q) \neq D_{KL}(Q \parallel P) $).
 
 
 #### Practical examples
