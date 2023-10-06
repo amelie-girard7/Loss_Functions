@@ -16,20 +16,20 @@ The article aims to clarify the relationship between Cross Entropy, Negative Log
 #### Detailed Insights:
 
 1. **Negative Log-Likelihood (NLL) and Cross Entropy**:  
-   - *Detail*: In a neural network for multi-class classification, using a softmax activation in the final layer, the NLL serves as the cost function. The article reveals that this NLL is identical to Cross Entropy when one considers the predicted probabilities \( \hat{y} \) and the true labels \( y \) as discrete probability distributions.
-   - *Example*: If you have a three-class problem, and for a given instance, the true label \( y \) is [1, 0, 0] (one-hot encoded), and the predicted probabilities \( \hat{y} \) are [0.7, 0.2, 0.1]. Both NLL and Cross Entropy will use these distributions to compute the loss, yielding the same value.
+   - *Detail*: In a neural network for multi-class classification, using a softmax activation in the final layer, the NLL serves as the cost function. The article reveals that this NLL is identical to Cross Entropy when one considers the predicted probabilities $( \hat{y} $) and the true labels $( y $) as discrete probability distributions.
+   - *Example*: If you have a three-class problem, and for a given instance, the true label $( y $) is [1, 0, 0] (one-hot encoded), and the predicted probabilities $( \hat{y} $) are [0.7, 0.2, 0.1]. Both NLL and Cross Entropy will use these distributions to compute the loss, yielding the same value.
 
 2. **Entropy and Optimal Encoding**:  
    - *Detail*: The article explains the concept of entropy as the "expected number of bits" required to encode a message optimally given a probability distribution.
-   - *Example*: If you have a discrete random variable with three possible outcomes \( x_1, x_2, x_3 \) with probabilities \( p_1, p_2, p_3 \), the entropy will quantify the average number of yes/no questions needed to identify an outcome based on these probabilities.
+   - *Example*: If you have a discrete random variable with three possible outcomes $( x_1, x_2, x_3 $) with probabilities $( p_1, p_2, p_3 $), the entropy will quantify the average number of yes/no questions needed to identify an outcome based on these probabilities.
 
 3. **Kullback-Leibler (K-L) Divergence**:  
    - *Detail*: K-L Divergence measures how one probability distribution diverges or differs from a second, reference probability distribution. It's often seen as a distance measure between distributions.
-   - *Example*: If your model predicts a probability distribution \( \hat{y} \) and the true distribution is \( y \), the K-L divergence will quantify the "distance" between \( \hat{y} \) and \( y \).
+   - *Example*: If your model predicts a probability distribution $( \hat{y} $) and the true distribution is $( y $), the K-L divergence will quantify the "distance" between $( \hat{y} $) and $( y $).
 
 4. **Symmetry in Cross Entropy and K-L Divergence**:  
-   - *Detail*: The article points out that Cross Entropy and K-L Divergence are not symmetric, meaning \( H(p, q) \neq H(q, p) \) and \( D_{KL}(p||q) \neq D_{KL}(q||p) \).
-   - *Example*: In a classification problem, if \( y \) is the true distribution and \( \hat{y} \) is the predicted one, the Cross Entropy \( H(y, \hat{y}) \) will differ from \( H(\hat{y}, y) \).
+   - *Detail*: The article points out that Cross Entropy and K-L Divergence are not symmetric, meaning $( H(p, q) \neq H(q, p) $) and $( D_{KL}(p||q) \neq D_{KL}(q||p) $).
+   - *Example*: In a classification problem, if $( y $) is the true distribution and $( \hat{y} $) is the predicted one, the Cross Entropy $( H(y, \hat{y}) $) will differ from $( H(\hat{y}, y) $).
 
 5. **Batch vs. Per-Example Loss**:  
    - *Detail*: The article clarifies that while per-example NLL can be interpreted as Cross Entropy, the NLL of a batch of data is essentially a sum of Cross Entropies for each instance, each based on a different model distribution.
