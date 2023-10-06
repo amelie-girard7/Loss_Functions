@@ -61,7 +61,7 @@ The optimization is usually performed using iterative methods like Newton-Raphso
 
 #### Practical examples: MLE with Gaussian Distribution
 In this example, we'll generate some synthetic data from a Gaussian distribution and then use MLE to estimate its parameters ($( \mu $) and $( \sigma $)).
-[Link to the notebook](..\src\Maximum_Likelihood.ipynb)
+[Link to the notebook](../src/Maximum_Likelihood.ipynb)
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
