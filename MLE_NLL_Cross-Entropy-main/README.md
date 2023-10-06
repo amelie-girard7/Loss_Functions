@@ -4,7 +4,7 @@ This notebook aims to provide a comprehensive understanding of the difference be
 
 ## Table of Contents
 1. [Theoretical Foundations](#1-theoretical-foundations)
-    - [Maximum Likelihood Estimation (MLE)](#maximum-likelihood-estimation-mle)
+    - [1.1 Maximum Likelihood Estimation (MLE)](#11-maximum-likelihood-estimation-mle)
     - [1.2 Negative Log-Likelihood (NLL)](#12-negative-log-likelihood-nll)
     - [1.3 Cross-Entropy](#13-cross-entropy)
     - [1.4 Kullback-Leibler (K-L) Divergence](#14-kullback-leibler-k-l-divergence)
