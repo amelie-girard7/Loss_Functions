@@ -31,7 +31,7 @@ L(\theta; \mathbf{X}) = P(\mathbf{X} | \theta) = \prod_{i=1}^{n} f(x_i; \theta)
 The MLE aims to find $( \theta $) that maximizes this likelihood function:
 
 $[
-\hat{\theta}_{MLE} = \arg \max_{\theta} L(\theta; \mathbf{X})
+$hat{\theta}_{MLE} = \arg \max_{\theta} L(\theta; \mathbf{X})
 ]$
 
 Often, it is more convenient to work with the log-likelihood function, $( \ell(\theta; \mathbf{X}) $), which is the natural logarithm of the likelihood function:
