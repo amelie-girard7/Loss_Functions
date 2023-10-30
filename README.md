@@ -1,11 +1,10 @@
 ## Instruction 1
 
-The first is called the 'negative log-likelihood' (NLL) and is the universal loss function used to train classification models (including NLG models).
+'negative log-likelihood' (NLL) is the universal loss function used to train classification models (including NLG models).
 The NLL is the practical way to achieve 'maximum likelihood estimation' (MLE), because the likelihood and the log-likelihood are maximised by the same argument.
 In addition, many readers struggle to realise that it's identical to another loss function, the so-called 'cross entropy', simply because the latter is always introduced for the two-class (i.e., binary) case only, and with different notations. But they are exactly the same.
 Curiously, given that the ground truth is always 0 or 1, the NLL is also an instance of the Kullback-Leibler divergence, a popular way to measure the difference between two distributions.
 I have managed to find an article that talks about all this:
-
 
 [Reference](http://www.awebb.info/probability/2017/05/18/cross-entropy-and-log-likelihood.html)
 
